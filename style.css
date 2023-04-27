@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 75px;
+}
+.logo-title{
+    font-size: 1.5rem;
+    margin: 0.5rem
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a {
+text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+    display: flex;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+        
+    }
+    .navbar-links{
+        display: none; 
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1 rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+#gandhi_web {
+    font-family: 'Great Vibes', cursive;
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+
+#intro_pic_deep {
+    width: 1000px;
+    opacity: 0.4;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+#gandhi_quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+}
+
+
+
+ 
+
+
+#identity_title {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+#gandhi_image {
+    margin-left: 60px;
+    height:600px;
+    border-radius: 15px;
+}
+#generic_info_list {
+    margin-left: 1100px;
+    margin-right: 50px;
+    margin-top: -550px;
+    font-family: cursive;
+}
+.info_subheading {
+    font-size: 20px;
+    text-decoration: underline;
+    
+
+}
+.generic_info_details {
+    font-size: 17;
+}
+
+
+
+
+
